@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-export default function Hero({ navigateTo }) {
+export default function Hero() {
   return (
     <section id="about" className="relative hero-gradient pt-48 pb-32 px-6">
         <div className="max-w-6xl mx-auto grid lg:grid-cols-12 gap-12 items-center">
@@ -42,9 +43,9 @@ export default function Hero({ navigateTo }) {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-4 pt-6">
-                    <a href="#" onClick={(e) => { e.preventDefault(); navigateTo('projects'); }} className="group bg-orange-600 text-white px-8 py-4 rounded-2xl font-bold hover:bg-orange-500 transition-all flex items-center justify-center gap-3 glow-orange">
+                    <Link to="/projects" className="group bg-orange-600 text-white px-8 py-4 rounded-2xl font-bold hover:bg-orange-500 transition-all flex items-center justify-center gap-3 glow-orange">
                         View Work History <i className="fa-solid fa-chevron-right text-[10px] group-hover:translate-x-1 transition-transform"></i>
-                    </a>
+                    </Link>
                     <div className="flex items-center gap-4 px-6 py-4 bg-zinc-900/50 border border-zinc-800 rounded-2xl">
                         <i className="fa-brands fa-laravel text-xl laravel-text"></i>
                         <i className="fa-brands fa-react text-xl react-text"></i>

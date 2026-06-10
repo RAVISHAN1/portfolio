@@ -1,18 +1,29 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { Link, useParams } from 'react-router-dom';
 import { PROJECTS_DB } from '../data/projects';
 
-export default function ProjectDetails({ projectId, navigateTo }) {
-  const project = PROJECTS_DB[projectId];
+export default function ProjectDetails() {
+  const { id } = useParams();
+  const project = PROJECTS_DB[id];
 
-  if (!project) return null;
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [id]);
+
+  if (!project) return (
+    <div className="pt-40 pb-32 px-6 text-center">
+      <h2 className="text-3xl font-bold text-white mb-4">Project Not Found</h2>
+      <Link to="/projects" className="text-orange-500 hover:text-white transition">Return to Archive</Link>
+    </div>
+  );
 
   return (
     <section className="pt-40 pb-32 px-6">
         <div className="max-w-4xl mx-auto">
             <nav className="flex items-center gap-2 text-xs font-bold tracking-widest uppercase mb-12">
-                <a href="#" onClick={(e) => { e.preventDefault(); navigateTo('home'); }} className="text-zinc-500 hover:text-white transition">Home</a>
+                <Link to="/" className="text-zinc-500 hover:text-white transition">Home</Link>
                 <i className="fa-solid fa-chevron-right text-[8px] text-zinc-700"></i>
-                <a href="#" onClick={(e) => { e.preventDefault(); navigateTo('projects'); }} className="text-zinc-500 hover:text-white transition">Archive</a>
+                <Link to="/projects" className="text-zinc-500 hover:text-white transition">Archive</Link>
                 <i className="fa-solid fa-chevron-right text-[8px] text-zinc-700"></i>
                 <span className="text-orange-500">{project.title}</span>
             </nav>
@@ -68,9 +79,9 @@ export default function ProjectDetails({ projectId, navigateTo }) {
                 </div>
 
                 <div className="pt-12 text-center">
-                    <button onClick={() => navigateTo('projects')} className="text-sm font-bold tracking-widest text-zinc-500 hover:text-white transition flex items-center justify-center gap-2 mx-auto">
+                    <Link to="/projects" className="inline-block text-sm font-bold tracking-widest text-zinc-500 hover:text-white transition flex items-center justify-center gap-2 mx-auto">
                         <i className="fa-solid fa-arrow-left text-[10px]"></i> BACK TO ALL PROJECTS
-                    </button>
+                    </Link>
                 </div>
             </div>
         </div>

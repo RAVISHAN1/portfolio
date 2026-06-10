@@ -1,59 +1,21 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import TechStack from './components/TechStack';
-import FeaturedProjects from './components/FeaturedProjects';
+import Footer from './components/Footer';
+import Home from './pages/Home';
 import ProjectsArchive from './components/ProjectsArchive';
 import ProjectDetails from './components/ProjectDetails';
-import Footer from './components/Footer';
 
 function App() {
-  const [currentView, setCurrentView] = useState('home'); // 'home', 'projects', 'details'
-  const [selectedProjectId, setSelectedProjectId] = useState(null);
-
-  const navigateTo = (view, sectionId = null) => {
-    setCurrentView(view);
-    window.scrollTo(0, 0);
-
-    if (view === 'home' && sectionId) {
-      setTimeout(() => {
-        const section = document.getElementById(sectionId);
-        if (section) {
-          section.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, 100);
-    }
-  };
-
-  const openProject = (projectId) => {
-    setSelectedProjectId(projectId);
-    setCurrentView('details');
-    window.scrollTo(0, 0);
-  };
-
   return (
     <div className="bg-zinc-950 text-zinc-300 antialiased selection:bg-orange-500/30 min-h-screen">
-      <Navbar navigateTo={navigateTo} />
+      <Navbar />
       
-      {currentView === 'home' && (
-        <main className="page-view-enter">
-          <Hero navigateTo={navigateTo} />
-          <TechStack />
-          <FeaturedProjects openProject={openProject} navigateTo={navigateTo} />
-        </main>
-      )}
-
-      {currentView === 'projects' && (
-        <main className="page-view-enter">
-          <ProjectsArchive openProject={openProject} navigateTo={navigateTo} />
-        </main>
-      )}
-
-      {currentView === 'details' && selectedProjectId && (
-        <main className="page-view-enter">
-          <ProjectDetails projectId={selectedProjectId} navigateTo={navigateTo} />
-        </main>
-      )}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<main className="page-view-enter"><ProjectsArchive /></main>} />
+        <Route path="/projects/:id" element={<main className="page-view-enter"><ProjectDetails /></main>} />
+      </Routes>
 
       <Footer />
     </div>
