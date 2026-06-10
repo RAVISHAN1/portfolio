@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { PROJECTS_DB } from '../data/projects';
+import ProjectCard from '../components/ProjectCard';
 
 export default function ProjectsArchive() {
   const navigate = useNavigate();
@@ -22,18 +23,7 @@ export default function ProjectsArchive() {
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {allProjects.map(([key, project]) => (
-                    <div key={key} onClick={() => navigate(`/projects/${key}`)} className="project-card p-8 bg-zinc-900/50 border border-zinc-800 rounded-[2rem]">
-                        <h4 className="text-xl font-bold text-white mb-2">{project.title}</h4>
-                        <p className="text-zinc-500 text-xs mb-6 italic tracking-wide">{project.type}</p>
-                        <p className="text-zinc-400 text-sm leading-relaxed mb-8">{project.description}</p>
-                        <div className="flex flex-wrap gap-3">
-                            {project.stack.slice(0, 3).map((tech, idx) => (
-                                <span key={idx} className={`text-[9px] font-bold tracking-widest uppercase ${tech.toLowerCase().includes('laravel') ? 'text-orange-500' : (tech.toLowerCase().includes('react') ? 'text-cyan-400' : 'text-zinc-500')}`}>
-                                    {tech}
-                                </span>
-                            ))}
-                        </div>
-                    </div>
+                    <ProjectCard key={key} projectKey={key} project={project} />
                 ))}
             </div>
 
