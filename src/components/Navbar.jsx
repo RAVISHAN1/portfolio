@@ -12,16 +12,18 @@ export default function Navbar() {
                     JANITH.RAVISHAN
                 </Link>
 
-                <div className="hidden md:flex space-x-10 text-[13px] uppercase tracking-widest font-bold">
-                    {/* <Link to="/#about" className="hover:text-orange-500 transition">About</Link> */}
-                    <Link to="/projects" className="hover:text-orange-500 transition">Projects</Link>
-                    {/* <Link to="/#skills" className="hover:text-orange-500 transition">Stack</Link> */}
-                    {/* <Link to="/#contact" className="hover:text-orange-500 transition">Contact</Link> */}
-                </div>
+                <div className="flex items-center gap-3">
+                    <div className="hidden md:flex space-x-10 text-[13px] uppercase tracking-widest font-bold">
+                        {/* <Link to="/#about" className="hover:text-orange-500 transition">About</Link> */}
+                        <Link to="/projects" className="hover:text-orange-500 transition">Projects</Link>
+                        {/* <Link to="/#skills" className="hover:text-orange-500 transition">Stack</Link> */}
+                        {/* <Link to="/#contact" className="hover:text-orange-500 transition">Contact</Link> */}
+                    </div>
 
-                <Link to="/contact" className="hidden md:block px-5 py-2 bg-white text-black rounded-full text-xs font-bold hover:bg-orange-500 hover:text-white transition-all">
-                    LET'S TALK
-                </Link>
+                    <Link to="/contact" className="hidden md:block px-5 py-2 bg-white text-black rounded-full text-xs font-bold hover:bg-orange-500 hover:text-white transition-all">
+                        LET'S TALK
+                    </Link>
+                </div>
             </div>
         </nav>
     );
