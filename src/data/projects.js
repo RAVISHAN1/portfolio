@@ -6,7 +6,8 @@ export const PROJECTS_DB = {
         description: 'A dynamic live content platform built to deliver real-time media and news experiences to Sri Lankan audiences. The platform handles high-concurrency live streams, editorial content pipelines, and a responsive frontend crafted for speed and reliability across devices.',
         url: 'https://ahasa.ravishan.web.lk',
         type: 'Live Content Platform',
-        role: 'Lead Engineer'
+        role: 'Lead Engineer',
+        featured: true
     },
     'ceylonstays': {
         id: 2,
@@ -15,7 +16,8 @@ export const PROJECTS_DB = {
         description: 'A modern travel and accommodation booking platform connecting travellers with unique stays across Sri Lanka. Features property listings, advanced search and filtering, booking management, and an intuitive host dashboard — all wrapped in a clean, responsive design built for the modern traveller.',
         url: 'https://ceylonstays.ravishan.web.lk',
         type: 'Accommodation Booking Platform',
-        role: 'Full Stack Engineer'
+        role: 'Full Stack Engineer',
+        featured: true
     },
     'agalum': {
         id: 3,
@@ -24,7 +26,8 @@ export const PROJECTS_DB = {
         description: 'A comprehensive alumni management platform connecting graduates with their alma mater. Features include event management, donation tracking, mentorship programs, a directory of alumni, and an interactive news feed to keep the community engaged and informed.',
         url: 'https://agalum.ravishan.web.lk',
         type: 'Alumni Management Platform',
-        role: 'Full Stack Engineer'
+        role: 'Full Stack Engineer',
+        featured: true
     },
     'mytuition': {
         id: 4,
@@ -33,7 +36,8 @@ export const PROJECTS_DB = {
         description: 'An online tuition class management system connecting students with qualified tutors. The platform handles scheduling, live class integration, payment processing, assignment submissions, progress tracking, and a rating system to ensure quality education delivery.',
         url: 'https://mytuition.ravishan.web.lk',
         type: 'EdTech Platform',
-        role: 'Full Stack Engineer'
+        role: 'Full Stack Engineer',
+        featured: true
     },
     'derana': {
         id: 5,
@@ -42,7 +46,7 @@ export const PROJECTS_DB = {
         description: 'The official website for Derana TV, one of Sri Lanka\'s leading TV networks. This high-traffic media portal was built using a combination of Laravel for the robust backend management of news and programming, with React JS delivering a high-performance frontend experience for millions of concurrent users. Integrated real-time streaming APIs and automated publishing pipelines.',
         url: 'https://derana.lk/',
         type: 'Media Portal',
-        role: 'Lead Engineer'
+        role: 'Lead Engineer',
     },
     'ndb': {
         id: 6,
@@ -51,7 +55,7 @@ export const PROJECTS_DB = {
         description: 'The corporate web platform for NDB Bank. This project required strict security protocols and high availability. Leveraging Laravel\'s secure authentication and React\'s modular components, we delivered a streamlined banking interface that integrates various customer service modules and financial product explorers. Optimized for enterprise performance and data integrity.',
         url: 'https://www.ndbbank.com/',
         type: 'Enterprise Banking',
-        role: 'Full Stack Engineer'
+        role: 'Full Stack Engineer',
     },
     'patpat': {
         id: 7,
