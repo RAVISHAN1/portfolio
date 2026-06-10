@@ -3,42 +3,42 @@ export const PROJECTS_DB = {
         id: 1,
         title: 'ahasa.lk',
         stack: ['Laravel', 'React JS', 'MySQL', 'AWS'],
-        description: 'A dynamic live content platform built to deliver real-time media and news experiences to Sri Lankan audiences. The platform handles high-concurrency live streams, editorial content pipelines, and a responsive frontend crafted for speed and reliability across devices.',
+        description: 'A high-performance classified advertisements platform connecting buyers and sellers across Sri Lanka. Features advanced search with category filtering, user-friendly ad posting workflows, secure messaging, and an intuitive dashboard for managing listings.',
         url: 'https://ahasa.ravishan.web.lk',
-        type: 'Live Content Platform',
+        type: 'Classified Ads Platform',
         role: 'Lead Engineer',
         featured: true,
-        icon: 'fa-satellite-dish'
+        icon: 'fa-store'
     },
     'ceylonstays': {
         id: 2,
         title: 'ceylonstays.lk',
         stack: ['Laravel', 'React JS', 'MySQL', 'Tailwind CSS'],
-        description: 'A modern travel and accommodation booking platform connecting travellers with unique stays across Sri Lanka. Features property listings, advanced search and filtering, booking management, and an intuitive host dashboard — all wrapped in a clean, responsive design built for the modern traveller.',
+        description: 'A comprehensive hotel booking platform connecting travellers with luxury hotels and boutique stays across Sri Lanka. Features include real-time room availability, advanced search and filtering, secure booking management, and an intuitive hotelier dashboard.',
         url: 'https://ceylonstays.ravishan.web.lk',
-        type: 'Accommodation Booking Platform',
+        type: 'Hotel Booking Platform',
         role: 'Full Stack Engineer',
         featured: true,
-        icon: 'fa-house-chimney'
+        icon: 'fa-hotel'
     },
     'agalum': {
         id: 3,
         title: 'agalum.lk',
         stack: ['Laravel', 'React JS', 'PostgreSQL', 'AWS'],
-        description: 'A comprehensive alumni management platform connecting graduates with their alma mater. Features include event management, donation tracking, mentorship programs, a directory of alumni, and an interactive news feed to keep the community engaged and informed.',
+        description: 'A modern premium clothing e-commerce platform. Features a seamless shopping experience with advanced product filtering, secure payment gateway integrations, personalized wishlists, and a comprehensive inventory management system for the backend.',
         url: 'https://agalum.ravishan.web.lk',
-        type: 'Alumni Management Platform',
+        type: 'Clothing E-commerce',
         role: 'Full Stack Engineer',
         featured: true,
-        icon: 'fa-user-graduate'
+        icon: 'fa-shirt'
     },
     'mytuition': {
         id: 4,
         title: 'mytuition.lk',
         stack: ['Laravel', 'Vue JS', 'MySQL', 'DigitalOcean'],
-        description: 'An online tuition class management system connecting students with qualified tutors. The platform handles scheduling, live class integration, payment processing, assignment submissions, progress tracking, and a rating system to ensure quality education delivery.',
+        description: 'An educational marketplace dedicated to helping students find the perfect tuition classes. Tutors can post detailed profiles and class schedules, while students can search, filter by subject, and instantly join classes. Built with robust search indexing and user reviews.',
         url: 'https://mytuition.ravishan.web.lk',
-        type: 'EdTech Platform',
+        type: 'Tuition Finder Platform',
         role: 'Full Stack Engineer',
         featured: true,
         icon: 'fa-chalkboard-user'
@@ -93,13 +93,13 @@ export const PROJECTS_DB = {
         role: 'Full Stack Engineer',
         icon: 'fa-truck-fast'
     },
-    'music-buddy': {
-        id: 10,
-        title: 'Music Buddy',
-        stack: ['Laravel', 'Livewire', 'Pusher', 'GitHub'],
-        description: 'A live streaming and community app for the music industry. Musicians create detailed profiles with genre and instrument tags. The app facilitates real-time musician-customer matching based on location and occasion, featuring live availability tracking and an integrated booking engine.',
-        url: '#',
-        type: 'Live Streaming Community',
-        role: 'Full Stack Engineer'
-    }
+    // 'music-buddy': {
+    //     id: 10,
+    //     title: 'Music Buddy',
+    //     stack: ['Laravel', 'Livewire', 'Pusher', 'GitHub'],
+    //     description: 'A live streaming and community app for the music industry. Musicians create detailed profiles with genre and instrument tags. The app facilitates real-time musician-customer matching based on location and occasion, featuring live availability tracking and an integrated booking engine.',
+    //     url: '#',
+    //     type: 'Live Streaming Community',
+    //     role: 'Full Stack Engineer'
+    // }
 };
