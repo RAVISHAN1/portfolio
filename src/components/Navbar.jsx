@@ -19,9 +19,9 @@ export default function Navbar() {
                     {/* <Link to="/#contact" className="hover:text-orange-500 transition">Contact</Link> */}
                 </div>
 
-                <a href="mailto:jravishan@gmail.com" className="hidden md:block px-5 py-2 bg-white text-black rounded-full text-xs font-bold hover:bg-orange-500 hover:text-white transition-all">
+                <Link to="/contact" className="hidden md:block px-5 py-2 bg-white text-black rounded-full text-xs font-bold hover:bg-orange-500 hover:text-white transition-all">
                     LET'S TALK
-                </a>
+                </Link>
             </div>
         </nav>
     );
