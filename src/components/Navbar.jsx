@@ -12,9 +12,10 @@ export default function Navbar() {
                     JANITH.RAVISHAN
                 </Link>
 
-                <div className="flex items-center gap-3">
+                <div className="flex items-center space-x-10">
                     <div className="hidden md:flex space-x-10 text-[13px] uppercase tracking-widest font-bold">
                         {/* <Link to="/#about" className="hover:text-orange-500 transition">About</Link> */}
+                        <Link to="/" className="hover:text-orange-500 transition">Home</Link>
                         <Link to="/projects" className="hover:text-orange-500 transition">Projects</Link>
                         {/* <Link to="/#skills" className="hover:text-orange-500 transition">Stack</Link> */}
                         {/* <Link to="/#contact" className="hover:text-orange-500 transition">Contact</Link> */}
