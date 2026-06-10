@@ -7,7 +7,8 @@ export const PROJECTS_DB = {
         url: 'https://ahasa.ravishan.web.lk',
         type: 'Live Content Platform',
         role: 'Lead Engineer',
-        featured: true
+        featured: true,
+        icon: 'fa-satellite-dish'
     },
     'ceylonstays': {
         id: 2,
@@ -17,7 +18,8 @@ export const PROJECTS_DB = {
         url: 'https://ceylonstays.ravishan.web.lk',
         type: 'Accommodation Booking Platform',
         role: 'Full Stack Engineer',
-        featured: true
+        featured: true,
+        icon: 'fa-house-chimney'
     },
     'agalum': {
         id: 3,
@@ -27,7 +29,8 @@ export const PROJECTS_DB = {
         url: 'https://agalum.ravishan.web.lk',
         type: 'Alumni Management Platform',
         role: 'Full Stack Engineer',
-        featured: true
+        featured: true,
+        icon: 'fa-user-graduate'
     },
     'mytuition': {
         id: 4,
@@ -37,7 +40,8 @@ export const PROJECTS_DB = {
         url: 'https://mytuition.ravishan.web.lk',
         type: 'EdTech Platform',
         role: 'Full Stack Engineer',
-        featured: true
+        featured: true,
+        icon: 'fa-chalkboard-user'
     },
     'derana': {
         id: 5,
@@ -47,6 +51,7 @@ export const PROJECTS_DB = {
         url: 'https://derana.lk/',
         type: 'Media Portal',
         role: 'Lead Engineer',
+        icon: 'fa-tv'
     },
     'ndb': {
         id: 6,
@@ -56,6 +61,7 @@ export const PROJECTS_DB = {
         url: 'https://www.ndbbank.com/',
         type: 'Enterprise Banking',
         role: 'Full Stack Engineer',
+        icon: 'fa-building-columns'
     },
     'patpat': {
         id: 7,
@@ -64,16 +70,18 @@ export const PROJECTS_DB = {
         description: 'patpat.lk is a one-stop digital platform for all lifestyle needs—whether you are looking to buy a new car, find a new home, enroll in a new course, or simply browse for the latest products and services. The architecture focuses on heavy filtering systems and high-volume data handling across multiple business verticals.',
         url: 'https://www.patpat.lk/',
         type: 'Marketplace Platform',
-        role: 'Backend Engineer'
+        role: 'Backend Engineer',
+        icon: 'fa-store'
     },
     'happy-place': {
         id: 8,
         title: 'Your Happy Place',
         stack: ['Laravel', 'Geo-API', 'AWS S3', 'Bitbucket'],
-        description: 'A mobile-focused application designed to help users understand what makes them happy. Users can share happy moments with family and friends by adding photos and location-based pins to specific places. The backend utilizes complex geolocation indexing and real-time social feed aggregation.',
+        description: 'A mobile-focused application designed to help users understand what makes they happy. Users can share happy moments with family and friends by adding photos and location-based pins to specific places. The backend utilizes complex geolocation indexing and real-time social feed aggregation.',
         url: '#',
         type: 'Social Well-being App',
-        role: 'Backend Engineer'
+        role: 'Backend Engineer',
+        icon: 'fa-face-smile'
     },
     'off-rails': {
         id: 9,
@@ -82,7 +90,8 @@ export const PROJECTS_DB = {
         description: 'A logistics-heavy laundry service platform. The system connects delivery partners, laundry facilities, and residential customers. Features real-time tracking via Google Maps API, automated order assignment logic, and complex scheduling for pickups and drop-offs.',
         url: '#',
         type: 'Logistics Service',
-        role: 'Full Stack Engineer'
+        role: 'Full Stack Engineer',
+        icon: 'fa-truck-fast'
     },
     'music-buddy': {
         id: 10,

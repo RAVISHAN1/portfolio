@@ -27,7 +27,7 @@ export default function FeaturedProjects() {
                         <div className="flex justify-between items-start mb-8">
                             <div className="w-14 h-14 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center">
                                 {/* Use different icons based on type if you want, defaulting to star */}
-                                <i className={`fa-solid ${project.type.includes('Bank') ? 'fa-building-columns' : 'fa-tv'} text-orange-500 text-xl`}></i>
+                                <i className={`fa-solid ${project.icon || 'fa-star'} text-orange-500 text-xl`}></i>
                             </div>
                             <span className="text-zinc-600 group-hover:text-white transition"><i className="fa-solid fa-arrow-right"></i></span>
                         </div>
