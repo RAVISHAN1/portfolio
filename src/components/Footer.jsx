@@ -14,12 +14,12 @@ export default function Footer() {
                 </div>
                 
                 <div className="mt-12 md:mt-0 relative z-10">
-                    <a href="mailto:jravishan@gmail.com" className="text-2xl md:text-4xl font-bold hover:text-orange-600 transition tracking-tight break-all">
-                        jravishan@gmail.com
+                    <a href="mailto:dmj.ravishan@gmail.com" className="text-2xl md:text-4xl font-bold hover:text-orange-600 transition tracking-tight break-all">
+                        dmj.ravishan@gmail.com
                     </a>
                     <div className="flex justify-center md:justify-start gap-8 mt-10">
-                        <a href="https://github.com/jravishan" target="_blank" rel="noopener noreferrer" className="text-zinc-950 hover:text-orange-600 transition"><i className="fa-brands fa-github text-3xl"></i></a>
-                        <a href="#" className="text-zinc-950 hover:text-orange-600 transition"><i className="fa-brands fa-linkedin text-3xl"></i></a>
+                        <a href="https://github.com/jravishan" target="_blank" rel="noopener noreferrer" className="text-zinc-950 hover:text-orange-600 transition" aria-label="GitHub"><i className="fa-brands fa-github text-3xl"></i></a>
+                        <a href="https://www.linkedin.com/in/janith-ravishan-a9a39b371/" target="_blank" rel="noopener noreferrer" className="text-zinc-950 hover:text-orange-600 transition" aria-label="LinkedIn"><i className="fa-brands fa-linkedin text-3xl"></i></a>
                     </div>
                 </div>
                 
