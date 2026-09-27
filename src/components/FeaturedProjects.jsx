@@ -6,7 +6,9 @@ import ProjectCard from './ProjectCard';
 export default function FeaturedProjects() {
   const navigate = useNavigate();
   
-  const featuredProjects = Object.entries(PROJECTS_DB).filter(([key, project]) => project.featured);
+  const featuredProjects = Object.entries(PROJECTS_DB)
+    .filter(([key, project]) => project.featured)
+    .slice(0, 3);
 
   return (
     <section className="py-24 px-6 bg-zinc-900/20">
@@ -21,7 +23,7 @@ export default function FeaturedProjects() {
                 </Link>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {featuredProjects.map(([key, project]) => (
                     <ProjectCard key={key} projectKey={key} project={project} />
                 ))}

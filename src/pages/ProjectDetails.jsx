@@ -1,14 +1,10 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { PROJECTS_DB } from '../data/projects';
 
 export default function ProjectDetails() {
   const { id } = useParams();
   const project = PROJECTS_DB[id];
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [id]);
 
   if (!project) return (
     <div className="pt-40 pb-32 px-6 text-center">
